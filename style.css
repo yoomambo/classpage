@@ -1,0 +1,31 @@
+body{
+    font: 1em;
+}
+
+.header{
+    position: fixed;    
+    height: 50px;
+    width: 100%;
+}
+
+.header.menubar{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-width: 1024px;
+}
+
+.header.menubar.logo{
+    width: 20%;
+}
+.header.menubar.Reseracher{
+    width: 20%;
+}
+.header.menubar.Course{
+    width: 20%;
+}
+.header.menubar.Alumni_Review{
+    width: 20%;
+}
+.header.menubar.FAQ{
+    width: 20%;
+}

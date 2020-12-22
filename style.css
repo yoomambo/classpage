@@ -1,129 +1,28 @@
+/* @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css); */
+
 body{
-    font: 1em;
+    font: 10px;
     padding: 0;
     margin: 0;
+    min-width: 700px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
-/* header-main{
-    padding-top: 75px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    background-color: chocolate;
-} */
-
-.header-main{
-    height: 75px;
-    width: 100%;
-    color: white;
-    background: teal;
-    font-weight: bold;
-    align-items: center;
-    vertical-align: middle;
+a:link { 
+    color: rgb(170, 169, 169); text-decoration: none;
 }
-
-.header-main.menubar{
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    width: 65%;
-    display: table;
-    text-align: center;
-    float: left;
+a:visited { 
+    color: rgb(170, 169, 169); text-decoration: none;
 }
-
-.header-main.loginbar{
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    width: 25%;
-    display: table;
-    text-align: center;
-    float: left;
+a:hover { 
+    color: rgb(170, 169, 169); text-decoration: none;
 }
-
-.header-main.menubar.logo{
-    width: 10%;
-    float: left;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-    /* float: left; */
-}
-
-.header-main.menubar.reseracher{
-    width: 10%;
-    float: left;
-    /* padding-left: 10px;
-    padding-right: 30px; */
-    /* float: left; */
-}
-.header-main.menubar.course{
-    width: 10%;
-    float: left;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-    /* float: left; */
-}
-.header-main.menubar.Alumni{
-    width: 10%;
-    float: left;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-    /* float: left; */
-}
-.header-main.menubar.Review{
-    width: 10%;
-    float: left;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-    /* float: left; */
-}
-.header-main.menubar.FAQ{
-    width: 10%;
-    float: left;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-    /* float: left; */
-}
-.header-main.loginbar.login{
-    width: 45%;
-    float: left;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-    /* float: left; */
-}
-.header-main.loginbar.join{
-    width: 45%;
-    float: left;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-    /* float: left; */
-}
-
-main{
-    background-color: cornflowerblue;    
-    font-size: 20px;
-}
-.content1.slogan1{
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-    font-size: 50px;
-    background-color: saddlebrown;
-}
-.content1.slogan2{
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    text-align: center;
-    font-size: 20px;
-    background-color: yellowgreen;
-}
-.content1.slogan2.join_button{
-    position: center;
+hr{
+    height: 1px;
+    color : rgb(170, 169, 169);
+    background-color : rgb(170, 169, 169);
 }
 button{
-    background:#1AAB8A;
+    background:rgb(38, 64, 211);
     color:#fff;
     border:none;
     position:relative;
@@ -135,29 +34,139 @@ button{
     outline:none;
 }
 button:hover{
-background:#fff;
-color:#1AAB8A;
+    background:#fff;
+    color:rgb(231, 24, 24);
 }
 button:before,button:after{
-content:'';
-position:absolute;
-top:0;
-right:0;
-height:2px;
-width:0;
-background: #1AAB8A;
-transition:400ms ease all;
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    /* height:2px; */
+    width:0;
+    background: rgb(231, 24, 24);
+    transition:400ms ease all;
 }
 button:after{
-right:inherit;
-top:inherit;
-left:0;
-bottom:0;
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
 }
 button:hover:before,button:hover:after{
-width:100%;
-transition:800ms ease all;
+    width:100%;
+    transition:800ms ease all;
 }
+header{
+    /* position: fixed; */
+}
+.header-main{
+    width: 100%;
+    height: 80px;
+    color: white;
+    /* background-color: teal; */
+    font-weight: bold;
+    font-size: 1.4rem;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-main.logo{
+    box-sizing: border-box;
+    width: 10%;
+    text-align: center;
+    float: left;
+}
+.header-main.menubar{
+    box-sizing: border-box;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 60%;
+    text-align: center;
+    float: left;
+}
+.header-main.loginbar{
+    box-sizing: border-box;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 30%;
+    text-align: center;
+    float: left;
+}
+.header-main.menubar.people{
+    width: 20%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    float: left;
+}
+.header-main.menubar.course{
+    width: 20%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    float: left;
+}
+.header-main.menubar.Alumni{
+    width: 20%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    float: left;
+}
+.header-main.menubar.Review{
+    width: 20%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    float: left;
+}
+.header-main.menubar.FAQ{
+    width: 20%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    float: left;
+}
+.header-main.loginbar.login{
+    width: 50%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    float: left;
+}
+.header-main.loginbar.join{
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    float: left;
+}
+
+main{
+    /* background-color: cornflowerblue;     */
+    font-size: 2rem;
+}
+.content1{
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+.content1.slogan1{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    /* background-color: saddlebrown; */
+}
+.content1.slogan2{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: center;
+    font-size: 20px;
+    /* background-color: yellowgreen; */
+}
+.content1.slogan2.join_button{
+    position: center;
+}
+
 .content2{
     text-align: center;
     text-emphasis: none;
